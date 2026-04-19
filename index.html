@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AisureTech</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --border: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Projects */
+    .section {
+      margin-top: 3rem;
+    }
+
+    .section h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>AisureTech 🚀</h1>
+      <p>
+        Building intelligent, AI-powered web experiences that are interactive,
+        personalized, and actually fun to use.
+      </p>
+
+      <div class="cta">
+        <a href="https://github.com/aisuretech" class="btn">View GitHub</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+
+        <!-- IdealMatchAI -->
+        <div class="card">
+          <h3>💖 IdealMatchAI</h3>
+          <p>
+            Generate a deeply personalized AI match profile with personality,
+            story, and rich character detail.
+          </p>
+          <a href="https://github.com/aisuretech/idealmatchai">View Project →</a>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="card">
+          <h3>🧠 AI Quiz Reveal (Coming Soon)</h3>
+          <p>
+            Answer questions to gradually reveal an image in this interactive
+            knowledge-based game.
+          </p>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="card">
+          <h3>☕ AI Coffee (Coming Soon)</h3>
+          <p>
+            Explore coffee culture with AI-generated insights, pairings,
+            and recommendations.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section">
+      <h2>About</h2>
+      <p style="color: var(--muted); max-width: 700px;">
+        AisureTech focuses on building modern web applications that combine
+        artificial intelligence with clean user experiences. Each project is
+        designed to be simple on the surface, but powerful underneath.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © 2026 AisureTech • Built with curiosity and AI
+    </footer>
+
+  </div>
+
+</body>
+</html>
