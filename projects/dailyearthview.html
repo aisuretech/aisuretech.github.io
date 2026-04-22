@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Earth View | AI Sure Tech</title>
+  <meta name="description" content="Discover breathtaking daily Earth views from space captured by NASA's EPIC camera. Interactive high-resolution images of weather patterns, cloud formations, and natural phenomena from the DailyEarthView.com archive." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aisuretech.github.io/projects/dailyearthview.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Daily Earth View | AI Sure Tech" />
+  <meta property="og:description" content="Discover breathtaking daily Earth views from space, captured by NASA's EPIC camera. Interactive images showcasing dynamic weather patterns and natural phenomena." />
+  <meta property="og:url" content="https://aisuretech.github.io/projects/dailyearthview.html" />
+  <meta property="og:image" content="https://aisuretech.github.io/projects/images/daily-earth-view-og.jpg" />
+  <meta property="og:image:alt" content="Daily Earth View" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daily Earth View | AI Sure Tech" />
+  <meta name="twitter:description" content="Discover breathtaking daily Earth views from space, captured by NASA's EPIC camera on the DSCOVR spacecraft." />
+  <meta name="twitter:image" content="https://aisuretech.github.io/projects/images/daily-earth-view-og.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Daily Earth View",
+    "url": "https://dailyearthview.com",
+    "description": "Discover breathtaking daily Earth views from space, captured by NASA's EPIC camera on the DSCOVR spacecraft. Dive into interactive images showcasing our planet's dynamic weather patterns, cloud formations, rotating landscapes, and natural phenomena in high-resolution detail. Ideal for space enthusiasts, educators, and anyone captivated by the iconic 'blue marble' Earth—explore the ultimate Earth from space archive at DailyEarthView.com",
+    "image": "https://aisuretech.github.io/projects/images/daily-earth-view-og.jpg",
+    "applicationCategory": "Utility",
+    "offers": {
+      "@type": "Offer",
+      "price": "0"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aisuretech.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://aisuretech.github.io/projects/" },
+        { "@type": "ListItem", "position": 3, "name": "Daily Earth View", "item": "https://aisuretech.github.io/projects/dailyearthview.html" }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --border: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .nav { border-bottom: 1px solid var(--border); }
+    .nav .container { display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; padding-bottom: 1rem; }
+    .nav-brand { font-weight: 700; font-size: 1.1rem; }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { color: var(--muted); font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+
+    .hero { text-align: center; padding: 3rem 1rem 2rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; font-weight: 700; }
+    .hero .tagline { color: var(--muted); font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+    .section { margin-top: 2.5rem; }
+    .section h2 { margin-bottom: 1rem; font-size: 1.5rem; }
+    .section p { color: var(--muted); margin-bottom: 1rem; }
+
+    .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; }
+    .tag { background: var(--card); border: 1px solid var(--border); border-radius: 999px; padding: 0.4rem 0.8rem; font-size: 0.85rem; color: var(--muted); }
+
+    .cta { margin: 2rem 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 8px; background: var(--accent); color: white; font-weight: 600; transition: 0.2s; }
+    .btn:hover { background: var(--accent-hover); }
+    .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+    .features { list-style: none; margin: 1.5rem 0; }
+    .features li { padding: 0.75rem 0; padding-left: 1.5rem; position: relative; }
+    .features li:before { content: "→"; position: absolute; left: 0; color: var(--accent); }
+
+    .screenshot { margin: 2rem 0; text-align: center; }
+    .screenshot img { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+
+    .footer-socials {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .footer-socials a {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: 0.2s ease;
+      margin-top: 0;
+    }
+    .footer-socials a:hover {
+      color: var(--text);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .footer-socials svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      display: block;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand">AI Sure Tech</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="https://github.com/aisuretech" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <section class="hero">
+      <h1>🌍 Daily Earth View</h1>
+      <p class="tagline">Breathtaking views of Earth from space, updated daily</p>
+    </section>
+
+    <section class="section">
+      <h2>Overview</h2>
+      <p>
+        Discover breathtaking daily Earth views from space, captured by NASA's EPIC camera on the DSCOVR spacecraft. Dive into interactive images showcasing our planet's dynamic weather patterns, cloud formations, rotating landscapes, and natural phenomena in high-resolution detail. Ideal for space enthusiasts, educators, and anyone captivated by the iconic "blue marble" Earth—explore the ultimate Earth from space archive at DailyEarthView.com.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Tags</h2>
+      <div class="tags">
+        <span class="tag">AI App</span>
+        <span class="tag">Space</span>
+        <span class="tag">Earth</span>
+        <span class="tag">Science</span>
+        <span class="tag">NASA</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Key Features</h2>
+      <ul class="features">
+        <li>Daily high-resolution Earth imagery from NASA's EPIC camera</li>
+        <li>Interactive views of weather patterns and cloud formations</li>
+        <li>Dynamic planet rotation visualization</li>
+        <li>Natural phenomena exploration and discovery</li>
+        <li>Perfect for educators, space enthusiasts, and planetary scientists</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="cta">
+        <a href="https://dailyearthview.com" target="_blank" rel="noopener noreferrer" class="btn">Visit Daily Earth View</a>
+        <a href="https://github.com/aisuretech/daily-earth-view" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="https://www.facebook.com/aisuretech/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="/assets/social-icons.svg#icon-facebook"></use></svg>
+        </a>
+        <a href="https://www.instagram.com/aisuretech" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="/assets/social-icons.svg#icon-instagram"></use></svg>
+        </a>
+        <a href="https://www.tiktok.com/@aisuretech" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="/assets/social-icons.svg#icon-tiktok"></use></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/aisuretech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="/assets/social-icons.svg#icon-linkedin"></use></svg>
+        </a>
+        <a href="https://x.com/aisuretech" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="/assets/social-icons.svg#icon-x"></use></svg>
+        </a>
+        <a href="https://www.youtube.com/@AISureTech" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="/assets/social-icons.svg#icon-youtube"></use></svg>
+        </a>
+      </div>
+      © 2026 <a href="https://aisuretech.github.io/">AISureTech</a> • <a href="/sitemap.html" style="color: var(--accent);">HTML Sitemap</a> • Built with curiosity and AI
+    </footer>
+
+  </div>
+
+</body>
+</html>
